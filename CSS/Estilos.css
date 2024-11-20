@@ -9,7 +9,7 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
-    font-size: 15px;
+    font-size: 12px;
     background-image: none;
     background-size: cover;
     background-repeat: no-repeat;
@@ -180,10 +180,10 @@ header .btn:hover {
 
 .content p {
     align-items: center;
-    margin: 0.2rem;
+    margin: 0.5rem;
     color: #000;
-    font-weight: 200;
-    width: 40rem;
+    font-weight: 5px;
+    width: 80rem;
 }
 
 .card .footer {
