@@ -86,7 +86,7 @@ a {
 }
 
 .menu {
-          margin-top: -50px;
+          margin-top: 50px;
           display: block;
           padding: 10px 5px;
 }
@@ -130,13 +130,13 @@ a {
 .contacto input[type="text"]:focus,
 .contacto input[type="email"]:focus,
 .contacto textarea:focus {
-          border-bottom: #243b55;
+          border-bottom: rgb(112, 174, 255);
 }
 
 .boton_enviar {
           width: 100px;
           height: 40px;
-          background: #243b55;
+          background: rgb(112, 174, 255);
           font-size: 18px;
           color: #fff;
           border: 1 solid;
