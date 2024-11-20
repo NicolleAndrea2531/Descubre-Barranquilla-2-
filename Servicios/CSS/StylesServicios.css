@@ -9,7 +9,7 @@ body {
     color: black;
     overflow-x: hidden;
     /*contenido que se extienda se oculta*/
-    background-color: rgb(252, 230, 230);
+    background-color: rgb(252, 252, 252);
     background-size: cover;
     /* Ajusta el tamaño completo */
     background-repeat: no-repeat;
@@ -58,7 +58,6 @@ h3 {
     width: 120px;
     height: 40px;
     background-color: #ff9c1d;
-    ;
     color: white;
     font-size: 15px;
     content: #fff;
@@ -94,7 +93,7 @@ h3 {
 }
 
 .menu a:hover {
-    background-color: white;
+    background-color: rgb(188, 217, 255);
     color: black;
 }
 
@@ -103,7 +102,7 @@ h3 {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    background-color: #cde0e0;
+    background-color: rgb(188, 217, 255);
     border-radius: 10px;
     padding: 30px;
     margin: 15px;
@@ -111,7 +110,7 @@ h3 {
 
 /* Contenedor para una sola imagen */
 .Contenedor_Grand {
-    background: #cde0e0;
+    background: rgb(188, 217, 255);
     border-radius: 10px;
     padding: 30px;
     margin: 30px;
@@ -149,7 +148,7 @@ h3 {
     top: 20px;
     float: right;
     margin-right: 20px;
-    background: #cde0e0;
+    background: rgb(188, 217, 255);
     border-radius: 10px;
     padding: 10px;
     margin-top: 40px;
@@ -266,7 +265,7 @@ input {
 
 .Servicios_Contenedor {
     color: black;
-    background: #cde0e0;
+    background: rgb(188, 217, 255);
     border-radius: 10px;
     width: 65%;
     padding: 5px;
@@ -305,7 +304,7 @@ input {
 /* Estilo del contenido de "Acerca De" */
 .Acerca_De {
     color: black;
-    background-color: #cde0e0;
+    background-color: rgb(188, 217, 255);
     margin-left: 30px;
     margin-bottom: 30px;
     width: 70%;
@@ -328,7 +327,7 @@ iframe {
 
 .horas {
     color: black;
-    background-color: #cde0e0;
+    background-color: rgb(188, 217, 255);
     margin-left: 30px;
     margin-bottom: 30px;
     width: 65%;

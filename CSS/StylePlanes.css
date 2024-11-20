@@ -96,7 +96,7 @@ a {
 }
 
 .menu a:hover {
-  background-color: white;
+  background-color: rgb(188, 217, 255);
   color: black;
 }
 
