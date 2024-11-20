@@ -1,75 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descubre Barranquilla</title>
+    <link rel="stylesheet" href="CSS/Styleindex.css" />
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Descubre Barranquilla</title>
-        <link rel="stylesheet" href="CSS/Styleindex.css">
-        <script src="Java/registro.js"></script>
-    </head>
+  <body>
+    <form
+      action="login.html"
+      method="get"
+      class="login_formulario"
+      id="registroForm"
+    >
+      <br /><br /><br />
 
-    <body>
+      <img
+        src="Img/Logo.png"
+        alt="Cargando imagen"
+        width="50%"
+        class="logoform"
+      />
 
-        <form action="login.html" method="get" class="login_formulario"
-            id="registroForm">
-            <br><br><br>
+      <div class="login_titulo">
+        <h1 class="login_titulo">
+          <strong>Bienvenido a Descubre Barranquilla</strong>
+        </h1>
+        <p>
+          <strong>Regístrate para darle una nueva mirada a la ciudad</strong>
+        </p>
+      </div>
 
-            <img src="Img/Logo.png" alt="Cargando imagen" width="50%"
-                class="logoform">
+      <div>
+        <label for="Nombre"><strong>Nombres</strong></label>
+        <input
+          type="text"
+          id="Nombre"
+          name="Nombre"
+          placeholder="Ingresa tus nombres"
+          required
+        />
+      </div>
 
-            <div class="login_titulo">
-                <h1 class="login_titulo"><strong>Bienvenido a Descubre
-                        Barranquilla</strong></h1>
-                <p><strong>Regístrate para darle una nueva mirada a la
-                        ciudad</strong></p>
-            </div>
+      <div>
+        <label for="Apellido"><strong>Apellidos</strong></label>
+        <input
+          type="text"
+          id="Apellido"
+          placeholder="Ingresa tus apellidos"
+          required
+        />
+      </div>
 
-            <div>
-                <label for="Nombre"><strong>Nombres</strong></label>
-                <input type="text" id="Nombre" name="Nombre"
-                    placeholder="Ingresa tus nombres" required>
-            </div>
+      <div>
+        <label for="correo"><strong>Correo Electronico</strong></label>
+        <input
+          type="email"
+          id="correo"
+          placeholder="Ingresa un E-mail"
+          required
+        />
+      </div>
 
-            <div>
-                <label for="Apellido"><strong>Apellidos</strong></label>
-                <input type="text" id="Apellido"
-                    placeholder="Ingresa tus apellidos" required>
-            </div>
+      <div>
+        <label for="password"><strong>Contraseña</strong></label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Ingresa una contraseña"
+          required
+        />
+      </div>
 
-            <div>
-                <label for="correo"><strong>Correo Electronico</strong></label>
-                <input type="email" id="correo" placeholder="Ingresa un E-mail"
-                    required>
-            </div>
+      <div>
+        <label for="Fecha">Hombre</label>
+        <input type="radio" id="Fecha" name="Genero" value="Hombre" required />
 
-            <div>
-                <label for="password"><strong>Contraseña</strong></label>
-                <input type="password" id="password"
-                    placeholder="Ingresa una contraseña" required>
-            </div>
+        <label for="Fecha">Mujer</label>
+        <input type="radio" id="Fecha" name="Genero" value="Mujer" required />
+      </div>
 
-            <div>
-                <label for="Fecha">Hombre</label>
-                <input type="radio" id="Fecha" name="Genero" value="Hombre"
-                    required>
+      <div>
+        <br />
+        <button class="boton_iniciar">Registrarse</button><br />
+      </div>
 
-                <label for="Fecha">Mujer</label>
-                <input type="radio" id="Fecha" name="Genero" value="Mujer"
-                    required>
-            </div>
-
-            <div><br>
-                <button class="boton_iniciar">Registrarse</button><br>
-            </div>
-
-            <div><br>
-                <a href="login.html"><strong>Iniciar sesión</strong></a>
-            </div>
-
-        </form>
-
-
-    </body>
-
+      <div>
+        <br />
+        <a href="login.html"><strong>Iniciar sesión</strong></a>
+      </div>
+    </form>
+  </body>
+  <script src="./Java/registro.js"></script>
 </html>

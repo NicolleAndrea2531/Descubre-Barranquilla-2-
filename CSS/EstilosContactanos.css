@@ -1,0 +1,190 @@
+* {
+          box-sizing: border-box;
+}
+
+body {
+          margin: 0;
+          padding: 0;
+          border: 0;
+          color: white;
+          overflow-x: hidden;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+
+}
+
+
+form {
+          align-items: center;
+          text-align: center;
+}
+
+a {
+          text-decoration: none;
+          color: inherit;
+}
+
+/* Fondo del nav, menu */
+.fondo {
+          background-image: linear-gradient(to bottom, rgb(96, 170, 255), #ffffff);
+          /* Degradado hacia abajo */
+}
+
+/* Configuracion del img y mensaje bienvenida*/
+.superior {
+          display: flex;
+          width: 100%;
+}
+
+.superior img {
+          position: relative;
+          margin-top: 20px;
+}
+
+.superior .mssbienvenida {
+          color: white;
+          margin-top: 35px;
+}
+
+/* Configuracion del menu */
+#menu {
+          text-align: center;
+          align-items: center;
+}
+
+.menu {
+          margin-top: -50px;
+          display: block;
+          padding: 10px 5px;
+}
+
+.menu a {
+          text-decoration: none;
+          color: rgb(12, 12, 12);
+          padding: 0px 10px;
+          font-size: 20px;
+}
+
+.menu a:hover {
+          background-color: white;
+          color: black;
+}
+
+
+
+.contacto {
+          background-color: #fff;
+          padding: 20px;
+          margin: 20px auto;
+          max-width: 600px;
+          color: black;
+          border-radius: 15px;
+}
+
+.contacto label {
+          display: block;
+          margin-bottom: 10px;
+}
+
+.contacto input[type="text"],
+.contacto input[type="email"],
+.contacto textarea {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 20px;
+}
+
+.contacto input[type="text"]:focus,
+.contacto input[type="email"]:focus,
+.contacto textarea:focus {
+          border-bottom: #243b55;
+}
+
+.boton_enviar {
+          width: 100px;
+          height: 40px;
+          background: #243b55;
+          font-size: 18px;
+          color: #fff;
+          border: 1 solid;
+          box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+          outline: 1px solid;
+          outline-offset: 0px;
+          text-shadow: none;
+          transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+
+.boton_enviar:hover {
+          border: 1px solid;
+          box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+          outline-color: rgba(255, 255, 255, 0);
+          outline-offset: 35px;
+          text-shadow: 1px 1px 2px #427388;
+
+}
+
+
+/* Estilos del pie de página (Footer) */
+.pie_pagina {
+          background-image: linear-gradient(to bottom, #110f10, #211f20);
+          /* Degradado hacia abajo */
+          color: white;
+          padding: 5px;
+          text-align: center;
+}
+
+.pie_pagina h4 {
+          margin-bottom: 10px;
+}
+
+.info_contacto p,
+.redes_sociales a,
+.derechos p {
+          margin: 5px 0;
+}
+
+.redes_sociales a {
+          color: white;
+          margin: 0 10px;
+          text-decoration: none;
+}
+
+.redes_sociales a:hover {
+          text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+          body {
+                    font-size: 14px;
+          }
+
+          .superior {
+                    display: block;
+                    text-align: center;
+          }
+
+          .superior .logo {
+                    width: 30%;
+                    margin: 20px auto;
+          }
+
+          .bienvenida {
+                    margin: 20px auto;
+          }
+
+          .menu {
+                    margin-top: 20px;
+          }
+
+          .menu ul {
+                    padding: 0;
+          }
+
+          .menu a {
+                    display: block;
+                    padding: 10px;
+                    font-size: 18px;
+          }
+}
