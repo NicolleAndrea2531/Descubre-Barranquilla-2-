@@ -1,0 +1,508 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: black;
+    overflow-x: hidden;
+    /*contenido que se extienda se oculta*/
+    background-color: rgb(252, 230, 230);
+    background-size: cover;
+    /* Ajusta el tamaño completo */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h2 {
+    font-size: 45px;
+
+}
+
+h3 {
+    font-size: 18px;
+
+}
+
+.h4 {
+    font-size: 12px;
+
+
+
+}
+
+/* Configuración del menu superior*/
+.superior {
+    display: flex;
+    width: 100%;
+}
+
+.superior img {
+    position: relative;
+    margin-top: 20px;
+    width: 15%;
+
+}
+
+.menu {
+    text-align: center;
+    align-items: center;
+}
+
+/* Boton de volver al menu inicial */
+.volver {
+    margin-top: 50px;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    background-color: #ff9c1d;
+    ;
+    color: white;
+    font-size: 15px;
+    content: #fff;
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgb(112, 174, 255);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.volver:Hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 35px;
+    text-shadow: 1px 1px 2px
+}
+
+.menu {
+    margin-top: -50px;
+    display: block;
+    padding: 10px 5px;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: #050505;
+    padding: 0px 10px;
+    font-size: 20px;
+}
+
+.menu a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Contenedor para las imagenes que tienen 3, una grande dos pequeñas */
+.Contenedor_Grande {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-color: #cde0e0;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 15px;
+}
+
+/* Contenedor para una sola imagen */
+.Contenedor_Grand {
+    background: #cde0e0;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+}
+
+.Imagen_Grande {
+    width: 70%;
+    border-radius: 30px;
+    height: auto;
+    /* Ajuste para hacer la imagen completamente responsive */
+
+}
+
+.Contenedor_pequeño {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    /* Ajuste para separar los contenedores pequeños */
+
+}
+
+.Imagen_Pequeña {
+    width: 70%;
+    margin-top: 10px;
+    border-radius: 30px;
+}
+
+
+/* Estilos para cuadro de reserva flotante */
+.Reservar {
+    color: rgb(10, 10, 10);
+    width: 30%;
+    position: sticky;
+    top: 20px;
+    float: right;
+    margin-right: 20px;
+    background: #cde0e0;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+#Texto_reserva {
+    text-align: center;
+}
+
+
+.Boton_Reserva {
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    background-color: rgb(112, 174, 255);
+    color: white;
+    font-size: 15px;
+    color: #fff;
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(243, 3, 3, 0.336);
+    outline: 1px solid;
+    outline-color: rgb(255, 255, 255);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    justify-content: space-between;
+}
+
+
+.Boton_Reserva:Hover,
+.input_reserva:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 35px;
+    text-shadow: 1px 1px 2px rgb(112, 174, 255);
+}
+
+/* Estilos del formulario al dar click en reserva */
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#formulario {
+    color: rgb(17, 17, 17);
+    width: 50%;
+    background-image: linear-gradient(to bottom, rgb(146, 189, 255), rgba(255, 255, 255, 0.808));
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+#cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 30px;
+    color: #0a0a0a;
+}
+
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: rgba(255, 255, 255);
+}
+
+
+.input_reserva {
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    background-color: rgb(112, 174, 255);
+    color: white;
+    font-size: 15px;
+    color: #fff;
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(243, 3, 3, 0.336);
+    outline: 1px solid;
+    outline-color: #fcfcff;
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.Contenido-Desplazable {
+    padding-top: 20px;
+
+}
+
+
+/* Estilos de los servicios del local */
+#Servicios {
+    margin-left: 30px;
+}
+
+.Servicios_Contenedor {
+    color: black;
+    background: #cde0e0;
+    border-radius: 10px;
+    width: 65%;
+    padding: 5px;
+    margin-left: 30px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+
+
+
+
+.expand-button {
+    background-color: #011831;
+    color: #fff;
+    width: 25px;
+    border: none;
+    border-radius: 30%;
+    position: absolute;
+    margin-left: 61%;
+    margin-top: -70px;
+    transition: 500ms;
+}
+
+.expand-button:hover {
+    background-color: rgb(112, 174, 255);
+    color: black;
+}
+
+
+/* Estilo del titulo "Acerca De" */
+#Acerca {
+    margin-left: 30px;
+}
+
+/* Estilo del contenido de "Acerca De" */
+.Acerca_De {
+    color: black;
+    background-color: #cde0e0;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    width: 70%;
+    border-radius: 10px;
+    width: 65%;
+    padding: 5px;
+}
+
+
+
+
+iframe {
+    margin-left: 30px;
+}
+
+
+#Horario {
+    margin-left: 30px;
+}
+
+.horas {
+    color: black;
+    background-color: #cde0e0;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    width: 65%;
+    border-radius: 10px;
+    width: 65%;
+    padding: 5px;
+    margin-bottom: 100px;
+}
+
+.Lunes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: 45%;
+    margin-left: 250px;
+    margin-bottom: 5px;
+}
+
+/* Estilos del pie de página (Footer) */
+.pie_pagina {
+    background-image: linear-gradient(to bottom, #110f10, #211f20);
+    /* Degradado hacia abajo */
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+.pie_pagina h4 {
+    margin-bottom: 10px;
+}
+
+.info_contacto p,
+.redes_sociales a,
+.derechos p {
+    margin: 5px 0;
+}
+
+.redes_sociales a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.redes_sociales a:hover {
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 768px) {
+    .Reservar {
+        width: 100%;
+        position: sticky;
+        bottom: 0;
+        top: auto;
+        float: none;
+        margin-right: 0;
+        margin-top: 0;
+    }
+
+    .Contenedor_Grande,
+    .Contenedor_Grand {
+        padding: 15px;
+        /* Ajuste para reducir el espacio en dispositivos móviles */
+        margin: 15px;
+    }
+
+    .Imagen_Grande,
+    .Imagen_Pequeña {
+        border-radius: 15px;
+        /* Ajuste para reducir el radio de la esquina */
+    }
+
+    @media screen and (max-width: 768px) {
+        body {
+            background-attachment: scroll;
+        }
+
+        .superior img {
+            margin-top: -10px;
+            width: 20%;
+        }
+
+        .volver {
+            margin-top: 15px;
+        }
+
+        .menu {
+            margin-top: 20px;
+        }
+
+        .menu ul {
+            padding: 0;
+        }
+
+        .menu a {
+            display: block;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        .Contenedor_Grande,
+        .Contenedor_Grand {
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .Imagen_Grande,
+        .Imagen_Pequeña {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .Imagen_Pequeña {
+            margin-top: 10px;
+        }
+
+        .Reservar {
+            width: 100%;
+            position: relative;
+            float: none;
+            margin-right: 0;
+            margin-top: 0;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        #Texto_reserva {
+            text-align: center;
+        }
+
+        #formulario {
+            width: 100%;
+            margin: auto;
+        }
+
+        input {
+            width: calc(100% - 20px);
+        }
+
+        .Contenido-Desplazable,
+        .Acerca_De,
+        .horas,
+        iframe,
+        .pie_pagina,
+        .Servicios_Contenedor {
+            width: 100%;
+            margin-left: 0;
+        }
+
+        .horas {
+            width: 100%;
+            margin-left: 0;
+            padding: 15px;
+            margin-bottom: 30px;
+        }
+
+        .Lunes {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+            margin-left: 0;
+            margin-bottom: 10px;
+        }
+
+        .expand-button {
+            margin-left: 80%;
+        }
+    }
+}

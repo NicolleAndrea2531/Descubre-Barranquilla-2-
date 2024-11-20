@@ -1,0 +1,126 @@
+*{
+          margin: 0;
+          padding: 0;
+}
+
+
+.fondo {
+          background-image: linear-gradient(to bottom, rgb(96, 170, 255), #ffffff);
+          /* Degradado hacia abajo */
+        
+}
+
+/* Configuracion del img y mensaje bienvenida*/
+.superior {
+          display: flex;
+          width: 100%;
+}
+
+.superior img {
+          position: relative;
+          margin-top: 20px;
+}
+
+.volver {
+
+
+          margin-top: 50px;
+          border-radius: 10px;
+          width: 120px;
+          height: 40px;
+          background-color:#ff9c1d;
+          color: white;
+          font-size: 15px;
+          content: #fff;
+          border: 0 solid;
+          box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+          outline: 1px solid;
+          outline-color: rgb(112, 174, 255);
+          outline-offset: 0px;
+          text-shadow: none;
+          transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+#Reseñas {
+          text-align: center;
+          margin-top: 5%;
+          font-size: 30px;
+}
+
+
+/* Estilos de las reseñas */
+.opiniones-container {
+          max-width: 600px;
+          margin: 30px auto;
+}
+
+.ultima_opinion {
+          max-width: 600px;
+          margin: 30px auto 8%;
+}
+
+.opinion {
+          display: flex;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          margin-bottom: 20px;
+          padding: 10px;
+}
+
+.avatar {
+          margin-right: 10px;
+}
+
+.avatar img {
+          width: 50px;
+          border-radius: 50%;
+}
+
+.contenido-opinion {
+          flex-grow: 1;
+          /* Ocupa el espacio disponible */
+}
+
+.nombre {
+          font-weight: bold;
+          margin-bottom: 5px;
+}
+
+.estrellas_2 {
+          display: inline-block;
+          color: #ffcc00;
+          font-size: 24px;
+}
+
+.comentario {
+          margin-top: 10px;
+}
+
+.pie_pagina {
+          background-image: linear-gradient(to bottom, #110f10, #211f20);
+          /* Degradado hacia abajo */
+          color: white;
+          padding: 5px;
+          text-align: center;
+}
+
+.pie_pagina h4 {
+          margin-bottom: 10px;
+}
+
+.info_contacto p,
+.redes_sociales a,
+.derechos p {
+          margin: 5px 0;
+}
+
+.redes_sociales a {
+          color: white;
+          margin: 0 10px;
+          text-decoration: none;
+}
+
+.redes_sociales a:hover {
+          text-decoration: underline;
+}

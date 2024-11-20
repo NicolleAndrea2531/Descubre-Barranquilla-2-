@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>La Matriarca</title>
+          <link rel="stylesheet" href="CSS/StylesServicios.css">
+</head>
+
+<body>
+          <div class="fondo">
+
+
+                    <header class="superior">
+                              <img src="Img/Logotipo (2).png" alt="Imagen Cargando" class="logo">
+                              <a href="../inicio.html"><button class="volver">Volver</button></a>
+                    </header>
+
+                    <nav class="menu">
+                              <ul>
+                                        <h2 class="Titulo_Entretenimiento">LA MATRIARCA</h2>
+                                        <a href="#Servicios">Servicios</a>
+                                        <a href="#Horario">Horario</a>
+                                        <a href="#Como_llegar">Como llegar</a>
+                                        <a href="#Acerca">Acerca De</a>
+                              </ul>
+                    </nav>
+          </div>
+
+
+
+
+
+
+
+          <div class="Contenedor_Grande">
+                    <img src="Img/La-Matriarca.jpg" alt="Cargando Imagen" class="Imagen_Grande">
+
+                    <div class="Contenedor_pequeño">
+                              <img src="Img/pargo-rojo.webp" alt="Cargando Imagen" class="Imagen_Pequeña">
+                              <img src="Img/Sancocho-de-costilla.jpg" alt="Cargando Imagen" class="Imagen_Pequeña">
+                              <h4>Lunes a miércoles
+                                        12:00 p.m. a 11:00
+                                        p.m.⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣
+                                        Jueves
+                                        12:00 pm. a 12:00
+                                        a.m.⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣
+                                        Viernes
+                                        12:00 pm. a 3:00
+                                        a.m.⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣
+                                        Sábado
+                                        8:00 a.m. a 3:00
+                                        a.m.⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣
+                                        Domingos
+                                        8:00 a.m. a 5:00 p.m</h4>
+                              <h4>Carrera 52 # 79 - 331</h4>
+                    </div>
+          </div>
+
+          <div class="Reservar">
+
+                    <div id="Texto_reserva">
+                              <h2>La Matriarca</h2>
+                              <button class="Boton_Reserva" onclick="mostrarFormulario()">Reservar Ahora</button>
+                              <div id="overlay">
+                                        <div id="formulario">
+                                                  <span id="cerrar" onclick="cerrarFormulario()">x</span>
+                                                  <h2>Reserva Ya</h2>
+                                                  <form>
+                                                            <input type="text" id="nombre" name="nombre"
+                                                                      placeholder="Ingresa tu nombre" required>
+
+                                                            <input type="text" id="documento"
+                                                                      placeholder="Ingresa tu documento">
+
+                                                            <input type="tel" id="tel"
+                                                                      placeholder="Ingresa tu teléfono">
+
+                                                            <input type="email" id="email" name="email"
+                                                                      placeholder="Ingresa tu correo" required>
+
+                                                            <input type="date" id="date"
+                                                                      placeholder="Ingresa tu fecha de reserva">
+
+                                                            <button type="button"
+                                                                      onclick="guardarReserva(); alert('Reserva guardada.');"
+                                                                      class="input_reserva">Reservar</button>
+                                                  </form>
+                                        </div>
+                              </div>
+                    </div>
+          </div>
+
+          <div class="Contenido_Desplazable">
+                    <h2 id="Servicios">Servicios</h2>
+
+
+                    <div class="Servicios_Contenedor">
+                              <div class="Servicio_1">
+
+                                        <ul>
+                                                  <p><strong>Para el desayuno: </strong></p>
+                                                  <p><strong>Los fritos mas representativos de la región Caribe</strong></p>
+                                                  <li>
+                                                            <p>Caribañola de pollo, carne y queso</p>
+                                                  </li>
+                                                  <li>
+                                                            <p>Arepa dulce con o sin queso</p>
+                                                  </li>
+                                                  <li>
+                                                            <p>Arepa de huevo</p>
+                                                  </li>
+                                                  <li>
+                                                            <p>Empanada de pollo, carne (desmechada o molida), o con
+                                                                      queso costeño</p>
+                                                  </li>
+                                                  <li>
+                                                            <p>Porción de bollo de mazorca y bollo limpio</p>
+                                                  </li>
+                                                  <p><strong>Si quieres probar comida tradicional del interior del
+                                                                      pais:</strong></p>
+                                                  <li>
+
+                                                            <p>Morcilla Antioqueña</p>
+                                                  </li>
+                                                  <li>
+
+                                                            <p>Picada de chicharron a la Matriarca</p>
+                                                  </li>
+                                                  <li>
+
+                                                            <p>Para bajar el guayabo, un buen caldo de costilla</p>
+                                                  </li>
+                                                  <li>
+
+                                                            <p>Chorizo bajo en grasa</p>
+                                                  </li>
+                                                  <p><strong>Ademas cuentan con porción de queso costeño, suero y arepitas paisas</strong></p>
+
+
+                                        </ul>
+                              </div>
+                    </div>
+
+                    <div class="Servicios_Contenedor">
+                              <div class="Servicio_1">
+
+                                        <ul>
+                                                  <p><strong>Cocina: </strong></p>
+                                                  <p><strong>Colombia en un solo plato, el menu se divide en:</strong></p>
+                                                  <li>
+                                                            <p>Entradas y Pa' Picar.</p>
+                                                  </li>
+                                                  <li>
+                                                            <p>Chicharronería y delicias de La Matriarca.</p>
+                                                  </li>
+                                                  <li>
+                                                            <p>Carnes y Parrilla, asi como comida de Mar.</p>
+                                                  </li>
+                                                  <li>
+                                                            <p>Ensaladas.</p>
+                                                  </li>
+                                                  <li>
+                                                            <p>Y para los mas pequeños, menu infantil.</p>
+                                                  </li>
+
+
+
+                                        </ul>
+                              </div>
+                    </div>
+                    <div class="Servicios_Contenedor">
+                              <div class="Servicio_1">
+
+                                        <ul>
+                                                  <p><strong>Pa'tomar: </strong></p>
+                                                  
+                                                  <li>
+                                                            <p>Algo suave, cervesas nacionales e internacionales.</p>
+                                                  </li>
+                                                  <li>
+                                                            <p>Vino.</p>
+                                                  </li>
+                                                  <li>
+                                                            <p>Cocteles.</p>
+                                                  </li>
+                                                  <li>
+                                                            <p>Algo mas fuerte, licores nacionales e internacionales.</p>
+                                                  </li>
+                                                  <li>
+                                                            <p>Bebidad frias y calientes.</p>
+                                                  </li>
+
+
+
+                                        </ul>
+                              </div>
+                    </div>
+                    <div class="Servicios_Contenedor">
+                              <div class="Servicio_1">
+
+                                        <ul>
+                                                  <p><strong>Postres: </strong></p>
+                                                  </p>
+                                                  <li>
+                                                            <p>Variedad de porciones de tortas.</p>
+                                                  </li>
+                                                  <li>
+                                                            <p>Porcion de flan de caramelo.</p>
+                                                  </li>
+                                                  <li>
+                                                            <p>Tartar de avellana.</p>
+                                                  </li>
+                                                 
+
+
+
+                                        </ul>
+                              </div>
+                    </div>
+          </div>
+
+                    
+
+
+
+
+
+
+
+          <h2 id="Acerca">Acerca De</h2>
+          <div class="Acerca_De">
+                    <p>Un verdadero tesoro, que te invita a vivir una experiencia llena de sabor, espacios auténticos y recuerdos memorables. Han cruzado fronteras para convertirnos en la casa de todos, ubicados en Medellín, Envigado, Sajonia, Barranquilla y Miami</p>
+                    <p>Desde sabores locales como el chicharrón, cocina de autor, jugosos cortes de carne y coctelería de autor</p>
+                              
+                              <p>Estan para recibirte con los brazos abiertos y listos para llevarte en un viaje culinario donde querrás volver, una y otra vez. BIENVENIDOS A LA MATRIARCA.</p>
+                              
+                    <ul>
+
+                              <li>
+                                        <p>Es un sitio ideal para ir con niños</p>
+                              </li>
+
+                    </ul>
+          </div>
+
+
+
+
+
+          <h2 id="Como_llegar">Como llegar</h2>
+          <div class="Como_llegar">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.455589911342!2d-74.81448652585476!3d11.004404189158553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42d5c4d49b3e1%3A0x1be076cc7c451aa0!2sLa%20Matriarca%20%7C%20Restaurante%20en%20Barranquilla%20%7C%20Chicharr%C3%B3n%20%7C%20Comida%20Tradicional!5e0!3m2!1ses-419!2sco!4v1731862123149!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+
+          <h2 id="Horario">Horarios</h2>
+          <div class="horas">
+                    <div class="Lunes">
+                              <h4 class="dia">Lunes</h4>
+                              <h4 class="hora">12:00 m - 11:00 p.m</h4>
+                    </div>
+
+                    <div class="Lunes">
+                              <h4 class="dia">Martes</h4>
+                              <h4 class="hora">12:00.m - 11:00 p.m</h4>
+                    </div>
+
+                    <div class="Lunes">
+                              <h4 class="dia">Miércoles</h4>
+                              <h4 class="hora">12:00 m - 11:00 p.m</h4>
+                    </div>
+
+                    <div class="Lunes">
+                              <h4 class="dia">Jueves</h4>
+                              <h4 class="hora">12:00 m - 12:00 a.m</h4>
+                    </div>
+
+                    <div class="Lunes">
+                              <h4 class="dia">Viernes</h4>
+                              <h4 class="hora">12:00 m - 3:00 a.m</h4>
+                    </div>
+
+                    <div class="Lunes">
+                              <h4 class="dia">Sábado</h4>
+                              <h4 class="hora">8:00 a.m - 3:00 a.m</h4>
+                    </div>
+
+                    <div class="Lunes">
+                              <h4 class="dia">Domingo y Festivos</h4>
+                              <h4 class="hora">8:00 a.m - 5:00 p.m</h4>
+                    </div>
+          </div>
+
+
+
+
+          <footer class="pie_pagina">
+                    <div class="info_contacto">
+                              <h4>Contacto</h4>
+                              <p>Email: nicolsalazar2531@gmail.com</p>
+                              <p>Teléfono: (+57) 321 814 01 84</p>
+                    </div>
+
+                    <div class="redes_sociales">
+                              <h4>Siguenos</h4>
+                              <a href=" https://www.instagram.com/nicolsalazar__/" target="_blank">Instagram</a>
+                              <a href=" https://github.com/NicolleAndrea2531" target="_blank">GitHub</a>
+                    </div>
+
+                    <div class="derechos_reservados">
+                              <p>&copy; 2024 Descubre Barranquilla. Todos los derechos reservados.</p>
+                    </div>
+          </footer>
+
+          <script src="Js/servicios.js"></script>
+</body>
+
+</html>

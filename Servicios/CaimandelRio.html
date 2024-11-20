@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caiman del Rio</title>
+    <link rel="stylesheet" href="CSS/StylesServicios.css">
+  </head>
+
+  <body>
+    <div class="fondo">
+
+      <header class="superior">
+        <img src="Img/Logotipo (2).png" alt="Imagen Cargando" class="logo">
+        <a href="../inicio.html"><button class="volver">Volver</button></a>
+      </header>
+
+      <nav class="menu">
+        <ul>
+          <h2 class="Titulo_Entretenimiento">CAIMAN DEL RIO</h2>
+          <a href="#Servicios">Servicios</a>
+          <a href="#Horario">Horario</a>
+          <a href="#Como_llegar">Como llegar</a>
+          <a href="#Acerca">Acerca De</a>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="Contenedor_Grande">
+      <img src="Img/caiman-del-rio.jpeg" alt="Cargando Imagen"
+        class="Imagen_Grande">
+
+      <div class="Contenedor_pequeño">
+        <img src="Img/caiman-del-rio-2.jpg" alt="Cargando Imagen"
+          class="Imagen_Pequeña">
+        <img src="Img/caiman-del-rio-3.jpg" alt="Cargando Imagen"
+          class="Imagen_Pequeña">
+        <h4>Lunes a Jueves 10:00 am a 10:00 pm, Viernes y Sabado 10:00 am a
+          12:00pm, Domingos 10:00am a 11:00pm
+        </h4>
+        <h4>Av. del Rio, Nte. Centro Historico, Barranquilla, Atlántico. Ubicado
+          dentro del gran Malecon del Rio</h4>
+      </div>
+    </div>
+
+    <div class="Reservar">
+
+      <div id="Texto_reserva">
+        <h2>Caiman del Rio</h2>
+        <button class="Boton_Reserva" onclick="mostrarFormulario()">Reservar
+          Ahora</button>
+        <div id="overlay">
+          <div id="formulario">
+            <span id="cerrar" onclick="cerrarFormulario()">x</span>
+            <h2>Reserva Ya</h2>
+            <form>
+              <input type="text" id="nombre" name="nombre"
+                placeholder="Ingresa tu nombre" required>
+
+              <input type="text" id="documento"
+                placeholder="Ingresa tu documento">
+
+              <input type="tel" id="tel" placeholder="Ingresa tu teléfono">
+
+              <input type="email" id="email" name="email"
+                placeholder="Ingresa tu correo" required>
+
+              <input type="date" id="date"
+                placeholder="Ingresa tu fecha de reserva">
+
+              <button type="button"
+                onclick="guardarReserva(); alert('Reserva guardada.');"
+                class="input_reserva">Reservar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Contenido_Desplazable">
+      <h2 id="Servicios">Servicios</h2>
+      <p><strong>Los momentos que vas a vivir aquí son inspirados en la
+          alimentación del caimán.</strong></p>
+
+      <div class="Servicios_Contenedor">
+        <div class="Servicio_1">
+
+          <ul>
+            <p><strong>Mejor al atardecer</strong></p>
+            <li>
+              <p>Despide el día con tus amigos con cervezas, cocteles, licores,
+                tapas y piqueteaderos.</p>
+            </li>
+            <p><strong>Siempre a la orilla del río</strong></p>
+            <li>
+              <p>Vive la verdadera experiencia de un plato fuerte recargado de
+                sabor mientras contemplas el río y su
+                paisaje.</p>
+            </li>
+            <p><strong>Con dulce espera</strong></p>
+            <li>
+              <p>Toma una merecida pausa y disfruta ese anhelado antojo de
+                postres, helados, granizados y café.</p>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="Servicios_Contenedor">
+        <div class="Servicio_1">
+          <img src="Img/Captura de pantalla 2024-11-07 150650.png"
+            alt="restaurantes" width="100%">
+
+        </div>
+      </div>
+
+      <div class="Servicios_Contenedor">
+        <div class="Servicio_1">
+          <img src="Img/locaciones.png" alt="locaciones" width="100%">
+
+        </div>
+      </div>
+
+    </div>
+
+    <h2 id="Acerca">Acerca De</h2>
+    <div class="Acerca_De">
+      <p>El Caimán del Río, Barranquilla escribe un nuevo capítulo en la
+        historia de la cultura de inmigrantes que nos
+        caracteriza. La cocina italiana, las auténticas recetas de la cultura
+        asiática, los sabores del mediterráneo,
+        innovación culinaria americana, propuestas de vanguardia de la comida
+        mexicana y cervezas del mundo.</p>
+
+      <ul>
+        <li>
+          <p>Entrada y espacio accesible para personas en silla de ruedas</p>
+        </li>
+        <li>
+          <p>Es un sitio ideal para ir con niños</p>
+        </li>
+        <li>
+          <p>Estacionamiento gratuito</p>
+        </li>
+      </ul>
+    </div>
+
+    <h2 id="Como_llegar">Como llegar</h2>
+    <div class="Como_llegar">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.2041531749487!2d-74.79895472585443!3d11.023304089140838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42d2de363d26b%3A0xc21371e557d2fdf2!2zQ2FpbcOhbiBkZWwgUsOtbw!5e0!3m2!1ses-419!2sco!4v1731010894423!5m2!1ses-419!2sco"
+        width="870" height="500" style="border:0;" allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <h2 id="Horario">Horarios</h2>
+    <div class="horas">
+      <div class="Lunes">
+        <h4 class="dia">Lunes</h4>
+        <h4 class="hora">10:00 a.m - 10:00 p.m</h4>
+      </div>
+
+      <div class="Lunes">
+        <h4 class="dia">Martes</h4>
+        <h4 class="hora">10:00 a.m - 10:00 p.m</h4>
+      </div>
+
+      <div class="Lunes">
+        <h4 class="dia">Miércoles</h4>
+        <h4 class="hora">10:00 a.m - 10:00 p.m</h4>
+      </div>
+
+      <div class="Lunes">
+        <h4 class="dia">Jueves</h4>
+        <h4 class="hora">10:00 a.m - 10:00 p.m</h4>
+      </div>
+
+      <div class="Lunes">
+        <h4 class="dia">Viernes</h4>
+        <h4 class="hora">10:00 a.m - 12:00 p.m</h4>
+      </div>
+
+      <div class="Lunes">
+        <h4 class="dia">Sábado</h4>
+        <h4 class="hora">10:00 a.m - 12:00 p.m</h4>
+      </div>
+
+      <div class="Lunes">
+        <h4 class="dia">Domingo</h4>
+        <h4 class="hora">10:00 a.m - 11:00 p.m</h4>
+      </div>
+
+      <h3>Recomendaciones</h3>
+      <ul>
+        <li>
+
+          <p>Prohibido fumar</p>
+        </li>
+        <li>
+          <p>Zona pet friendly sólo en terrazas</p>
+        </li>
+        <li>
+          <p>No se permite entrar comidas y bebidas</p>
+        </li>
+      </ul>
+
+    </div>
+
+    <footer class="pie_pagina">
+      <div class="info_contacto">
+        <h4>Contacto</h4>
+        <p>Email: nicolsalazar2531@gmail.com</p>
+        <p>Teléfono: (+57) 321 814 01 84</p>
+      </div>
+
+      <div class="redes_sociales">
+        <h4>Siguenos</h4>
+        <a href=" https://www.instagram.com/nicolsalazar__/"
+          target="_blank">Instagram</a>
+        <a href=" https://github.com/NicolleAndrea2531"
+          target="_blank">GitHub</a>
+      </div>
+
+      <div class="derechos_reservados">
+        <p>&copy; 2024 Descubre Barranquilla. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+  </body>
+
+</html>

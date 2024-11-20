@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Planes</title>
+        <link rel="stylesheet" href="CSS/StylePlanes.css">
+        <script src="Java/planes.js"></script>
+    </head>
+
+    <body>
+        <div class="fondo">
+            <header class="superior">
+                <img src="Img/Logo.png" alt="Imagen Cargando" width="10%"
+                    class="logo">
+                <a href="../inicio.html"><button
+                        class="volver">Volver</button></a>
+
+            </header>
+
+            <div id="menu">
+                <nav class="menu">
+                    <ul>
+                        <a href="inicio.html">Inicio</a>
+                        <a href="Planes.html">Planes</a>
+                        <a href="Citas.html">Citas agendadas</a>
+                        <a href="Contactanos.html">Contáctanos</a>
+                        <a href="Quienessomos.html">¿Quiénes Somos?</a>
+                        <a href="login.html">Cerrar sesión</a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div>
+            <h2 id="Barranquilla">PLANES Y PRECIOS DE DESCUBRE BARRANQUILLA</h2>
+        </div>
+
+        <ul type="none" class="Contenidos">
+
+            <div class="Basico">
+                <li>
+
+                    <h2 class="Titulo_Basico">Plan Básico</h2>
+                    <div class="Imagen_principal"><img src="Img/basico.png" alt
+                            width="40%">
+                    </div>
+
+                    <li>
+                        <p class="Precio">COP $20.000/MES</p>
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li>Ideal para quienes desean iniciar un negocio en
+                                Descubre Barranquilla.</li>
+                            <li>Programación de citas con un único proveedor de
+                                servicios.</li>
+                            <li>Notificaciones por correo electrónico para
+                                confirmar y recordar
+                                citas.</li>
+                            <li>Visualización de disponibilidad en tiempo
+                                real.</li>
+                        </ul>
+                    </li>
+
+                    <button class="Comprar_Basico" type="button"
+                        onclick="mostrarFormulario()">COMPRAR</button>
+                </li>
+            </div>
+
+            <div class="Premium">
+                <li>
+
+                    <h2 class="Titulo_Premium">Plan Premium</h2>
+                    <div class="Imagen_principal"><img src="Img/premium.png" alt
+                            width="40%">
+                    </div>
+
+                    <li>
+                        <p class="Precio">COP $30.000/MES</p>
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li>Perfecto para emprendedores que buscan crecer en
+                                Descubre Barranquilla.</li>
+                            <li>Programación de citas con múltiples proveedores
+                                de servicios.</li>
+                            <li>Sistema de gestión de citas avanzado para
+                                proveedores.</li>
+                            <li>Integración de pagos en línea para transacciones
+                                seguras.</li>
+                        </ul>
+                    </li>
+
+                    <button class="Comprar_Premium" type="button"
+                        onclick="mostrarFormulario()">COMPRAR</button>
+                </li>
+            </div>
+
+            <div class="Empresarial">
+                <li>
+
+                    <h2 class="Titulo_Empresarial">Plan Empresarial</h2>
+                    <div class="Imagen_principal"><img src="Img/empresarial.png"
+                            alt
+                            width="40%"></div>
+
+                    <li>
+                        <p class="Precio">COP $40.000/MES</p>
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li>Ideal para quienes desean iniciar un negocio en
+                                Descubre Barranquilla.</li>
+                            <li>Programación de citas con un único proveedor de
+                                servicios.</li>
+                            <li>Notificaciones por correo electrónico para
+                                confirmar y recordar
+                                citas.</li>
+                            <li>Visualización de disponibilidad en tiempo
+                                real.</li>
+                        </ul>
+                    </li>
+
+                    <button class="Comprar_Empresarial" type="button"
+                        onclick="mostrarFormulario()">COMPRAR</button>
+                </li>
+            </div>
+        </ul>
+
+        <div id="overlay">
+            <div id="formulario">
+                <span id="cerrar" onclick="cerrarFormulario()">x</span>
+                <form>
+                    <h2 class="titulo_compra">Compra segura</h2>
+
+                    <input type="text" id="nombre" name="nombre"
+                        placeholder="Número de tarjeta"
+                        required>
+
+                    <input type="text" id="documento"
+                        placeholder="Nombre del titular">
+
+                    <input type="tel" id="tel"
+                        placeholder="Fecha de Vencimiento">
+
+                    <input type="email" id="email" name="email"
+                        placeholder="código de seguridad"
+                        required>
+
+                    <button type="button" class="input_reserva"
+                        onclick="comprar()">Comprar</button>
+                </form>
+            </div>
+        </div>
+
+        <footer class="pie_pagina">
+            <div class="info_contacto">
+                <h4>Contacto</h4>
+                <p>Email: nicolsalazar2531@gmail.com</p>
+                <p>Teléfono: (+57) 321 814 01 84</p>
+            </div>
+
+            <div class="redes_sociales">
+                <h4>Síguenos</h4>
+                <a href=" https://www.instagram.com/nicolsalazar__/"
+                    target="_blank">Instagram</a>
+                <a href=" https://github.com/NicolleAndrea2531"
+                    target="_blank">GitHub</a>
+            </div>
+
+            <div class="derechos_reservados">
+                <p>&copy; 2024 Descubre Barranquilla. Todos los derechos
+                    reservados.</p>
+            </div>
+        </footer>
+
+    </body>
+
+</html>
