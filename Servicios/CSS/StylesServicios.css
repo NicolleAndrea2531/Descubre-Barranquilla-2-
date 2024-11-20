@@ -317,7 +317,10 @@ input {
 
 
 iframe {
+
     margin-left: 30px;
+    display: block;
+    justify-content: space-around;
 }
 
 

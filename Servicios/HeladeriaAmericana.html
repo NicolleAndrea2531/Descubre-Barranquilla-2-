@@ -1,264 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Heladeria Americana</title>
-      <link rel="stylesheet" href="CSS/StylesServicios.css">
-      <script src="servicios.js"></script>
-   </head>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Heladeria Americana</title>
+   <link rel="stylesheet" href="CSS/StylesServicios.css">
+   <script src="servicios.js"></script>
+</head>
 
-   <body>
+<body>
 
-      <div class="fondo">
+   <div class="fondo">
 
-         <header class="superior">
-            <img src="Img/Logotipo (2).png" alt="Imagen Cargando" class="logo">
-            <a href="../inicio.html"><button class="volver">Volver</button></a>
-         </header>
+      <header class="superior">
+         <img src="Img/Logotipo (2).png" alt="Imagen Cargando" class="logo">
+         <a href="../inicio.html"><button class="volver">Volver</button></a>
+      </header>
 
-         <nav class="menu">
+      <nav class="menu">
+         <ul>
+            <h2 class="Titulo_Entretenimiento">HELADERIA AMERICANA</h2>
+            <a href="#Servicios">Servicios</a>
+            <a href="#Horario">Horario</a>
+            <a href="#Como_llegar">Como llegar</a>
+            <a href="#Acerca">Acerca De</a>
+         </ul>
+      </nav>
+   </div>
+
+   <div class="Contenedor_Grande">
+      <img src="Img/FrozoMalt-Heladeria-Americana.jpg" alt="Cargando Imagen" class="Imagen_Grande">
+
+      <div class="Contenedor_pequeño">
+         <img src="Img/productos.jpg" alt="Cargando Imagen" class="Imagen_Pequeña">
+         <img src="Img/logo-heladeria-americana.png" alt="Cargando Imagen" class="Imagen_Pequeña">
+         <h4>Abierdo de lunes a domingo, desde las 9am hasta las 10pm</h4>
+         <h4>Sede principal Cra 43 con calle 72</h4>
+      </div>
+   </div>
+
+   <div class="Reservar">
+
+      <div id="Texto_reserva">
+         <h2>Heladeria Americana</h2>
+         <button class="Boton_Reserva" onclick="mostrarFormulario()">Reservar
+            Ahora</button>
+         <div id="overlay">
+            <div id="formulario">
+               <span id="cerrar" onclick="cerrarFormulario()">x</span>
+               <h2>Reserva Ya</h2>
+               <form>
+                  <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+
+                  <input type="text" id="documento" placeholder="Ingresa tu documento">
+
+                  <input type="tel" id="tel" placeholder="Ingresa tu teléfono">
+
+                  <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+
+                  <input type="date" id="date" placeholder="Ingresa tu fecha de reserva">
+
+                  <button type="button" onclick="guardarReserva(); alert('Reserva guardada.');"
+                     class="input_reserva">Reservar</button>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="Contenido_Desplazable">
+      <h2 id="Servicios">Servicios</h2>
+
+      <div class="Servicios_Contenedor">
+         <div class="Servicio_1">
+
             <ul>
-               <h2 class="Titulo_Entretenimiento">HELADERIA AMERICANA</h2>
-               <a href="#Servicios">Servicios</a>
-               <a href="#Horario">Horario</a>
-               <a href="#Como_llegar">Como llegar</a>
-               <a href="#Acerca">Acerca De</a>
+               <p><strong>Para el desayuno:</strong></p>
+               <li>
+                  <p>Panaderia y Pasteleria</p>
+               </li>
+               <li>
+                  <p>Sándwiches</p>
+               </li>
+               <li>
+                  <p>Hojaldres</p>
+               </li>
             </ul>
-         </nav>
-      </div>
-
-      <div class="Contenedor_Grande">
-         <img src="Img/FrozoMalt-Heladeria-Americana.jpg" alt="Cargando Imagen"
-            class="Imagen_Grande">
-
-         <div class="Contenedor_pequeño">
-            <img src="Img/productos.jpg" alt="Cargando Imagen"
-               class="Imagen_Pequeña">
-            <img src="Img/logo-heladeria-americana.png" alt="Cargando Imagen"
-               class="Imagen_Pequeña">
-            <h4>Abierdo de lunes a domingo, desde las 9am hasta las 10pm</h4>
-            <h4>Sede principal Cra 43 con calle 72</h4>
          </div>
       </div>
 
-      <div class="Reservar">
-
-         <div id="Texto_reserva">
-            <h2>Heladeria Americana</h2>
-            <button class="Boton_Reserva" onclick="mostrarFormulario()">Reservar
-               Ahora</button>
-            <div id="overlay">
-               <div id="formulario">
-                  <span id="cerrar" onclick="cerrarFormulario()">x</span>
-                  <h2>Reserva Ya</h2>
-                  <form>
-                     <input type="text" id="nombre" name="nombre"
-                        placeholder="Ingresa tu nombre" required>
-
-                     <input type="text" id="documento"
-                        placeholder="Ingresa tu documento">
-
-                     <input type="tel" id="tel"
-                        placeholder="Ingresa tu teléfono">
-
-                     <input type="email" id="email" name="email"
-                        placeholder="Ingresa tu correo" required>
-
-                     <input type="date" id="date"
-                        placeholder="Ingresa tu fecha de reserva">
-
-                     <button type="button"
-                        onclick="guardarReserva(); alert('Reserva guardada.');"
-                        class="input_reserva">Reservar</button>
-                  </form>
-               </div>
-            </div>
+      <div class="Servicios_Contenedor">
+         <div class="Servicio_1">
+            <ul>
+               <p><strong>Para un break dulce, salado o ambos:</strong></p>
+               <li>
+                  <p>Entradas</p>
+               </li>
+               <li>
+                  <p>Helados y Malteadas</p>
+               </li>
+               <li>
+                  <p>Postres</p>
+               </li>
+            </ul>
          </div>
       </div>
 
-      <div class="Contenido_Desplazable">
-         <h2 id="Servicios">Servicios</h2>
+      <div class="Servicios_Contenedor">
 
-         <div class="Servicios_Contenedor">
-            <div class="Servicio_1">
+         <div class="Servicio_1">
 
-               <ul>
-                  <p><strong>Para el desayuno:</strong></p>
-                  <li>
-                     <p>Panaderia y Pasteleria</p>
-                  </li>
-                  <li>
-                     <p>Sándwiches</p>
-                  </li>
-                  <li>
-                     <p>Hojaldres</p>
-                  </li>
-               </ul>
-            </div>
-         </div>
+            <ul>
+               <p><strong>Para el almuerzo o la cena:</strong></p>
 
-         <div class="Servicios_Contenedor">
-            <div class="Servicio_1">
-               <ul>
-                  <p><strong>Para un break dulce, salado o ambos:</strong></p>
-                  <li>
-                     <p>Entradas</p>
-                  </li>
-                  <li>
-                     <p>Helados y Malteadas</p>
-                  </li>
-                  <li>
-                     <p>Postres</p>
-                  </li>
-               </ul>
-            </div>
-         </div>
+               <li>
+                  <p>Hamburguesas</p>
+               </li>
+               <li>
+                  <p>Pastas y Sopas</p>
+               </li>
 
-         <div class="Servicios_Contenedor">
+               <p><strong>Para los mas pequeños de la casa:</strong></p>
+               <li>
+                  <p> Menu infantil</p>
+               </li>
+               <li>
+                  <p>Copas de helado</p>
+               </li>
+            </ul>
 
-            <div class="Servicio_1">
-
-               <ul>
-                  <p><strong>Para el almuerzo o la cena:</strong></p>
-
-                  <li>
-                     <p>Hamburguesas</p>
-                  </li>
-                  <li>
-                     <p>Pastas y Sopas</p>
-                  </li>
-
-                  <p><strong>Para los mas pequeños de la casa:</strong></p>
-                  <li>
-                     <p> Menu infantil</p>
-                  </li>
-                  <li>
-                     <p>Copas de helado</p>
-                  </li>
-               </ul>
-
-            </div>
-         </div>
-
-      </div>
-
-      <h2 id="Acerca">Acerca De</h2>
-      <div class="Acerca_De">
-         <p>La Heladería Americana es un restaurante tradicional ubicado en
-            Carrera 43 72,
-            Barranquilla. Con más de 80 años de historia, este lugar es una
-            parada
-            obligatoria en la ruta gastronómica costeña de Colombia.</p>
-         <p>Una de las joyas de la Heladería Americana es su famoso helado
-            Frozomalt. Este helado
-            premium ha sido reconocido como el sabor emblemático de este lugar y
-            de
-            Barranquilla. Los clientes lo describen como delicioso y una
-            tradición en la
-            ciudad.</p>
-
-         <ul>
-            <li>
-               <p>Entrada y espacio accesible para personas en silla de
-                  ruedas</p>
-            </li>
-            <li>
-               <p>Es un sitio ideal para ir con niños</p>
-            </li>
-            <li>
-               <p>Estacionamiento gratuito</p>
-            </li>
-         </ul>
-      </div>
-
-      <h2 id="Acerca">Otras Sedes</h2>
-      <div class="Acerca_De">
-
-         <ul>
-            <li>
-               <p>Cl. 76 #62-00, Nte. Centro Historico, Barranquilla,
-                  Atlántico</p>
-            </li>
-            <li>
-               <p>Cl. 99 #53 - 40, Riomar, Barranquilla, Atlántico</p>
-            </li>
-
-         </ul>
-      </div>
-
-      <h2 id="Como_llegar">Como llegar</h2>
-      <div class="Como_llegar">
-         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62664.55937422925!2d-74.90146763868921!3d10.998431400942982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42d0db2eab6e7%3A0xd4345840d5c8d80c!2sHelader%C3%ADa%20Americana!5e0!3m2!1ses-419!2sco!4v1730666311886!5m2!1ses-419!2sco"
-            width="870" height="500" style="border: 0;;" allowfullscreen
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            id="Como_llegar"></iframe>
-      </div>
-
-      <h2 id="Horario">Horarios</h2>
-      <div class="horas">
-         <div class="Lunes">
-            <h4 class="dia">Lunes</h4>
-            <h4 class="hora">9:00 a.m - 10:00 p.m</h4>
-         </div>
-
-         <div class="Lunes">
-            <h4 class="dia">Martes</h4>
-            <h4 class="hora">9:00 a.m - 10:00 p.m</h4>
-         </div>
-
-         <div class="Lunes">
-            <h4 class="dia">Miércoles</h4>
-            <h4 class="hora">9:00 a.m - 10:00 p.m</h4>
-         </div>
-
-         <div class="Lunes">
-            <h4 class="dia">Jueves</h4>
-            <h4 class="hora">9:00 a.m - 10:00 p.m</h4>
-         </div>
-
-         <div class="Lunes">
-            <h4 class="dia">Viernes</h4>
-            <h4 class="hora">9:00 a.m - 10:00 p.m</h4>
-         </div>
-
-         <div class="Lunes">
-            <h4 class="dia">Sábado</h4>
-            <h4 class="hora">9:00 a.m - 10:00 p.m</h4>
-         </div>
-
-         <div class="Lunes">
-            <h4 class="dia">Domingo</h4>
-            <h4 class="hora">9:00 a.m - 10:00 p.m</h4>
          </div>
       </div>
 
-      <footer class="pie_pagina">
-         <div class="info_contacto">
-            <h4>Contacto</h4>
-            <p>Email: nicolsalazar2531@gmail.com</p>
-            <p>Teléfono: (+57) 321 814 01 84</p>
-         </div>
+   </div>
 
-         <div class="redes_sociales">
-            <h4>Siguenos</h4>
-            <a href=" https://www.instagram.com/nicolsalazar__/"
-               target="_blank">Instagram</a>
-            <a href=" https://github.com/NicolleAndrea2531"
-               target="_blank">GitHub</a>
-         </div>
+   <h2 id="Acerca">Acerca De</h2>
+   <div class="Acerca_De">
+      <p>La Heladería Americana es un restaurante tradicional ubicado en
+         Carrera 43 72,
+         Barranquilla. Con más de 80 años de historia, este lugar es una
+         parada
+         obligatoria en la ruta gastronómica costeña de Colombia.</p>
+      <p>Una de las joyas de la Heladería Americana es su famoso helado
+         Frozomalt. Este helado
+         premium ha sido reconocido como el sabor emblemático de este lugar y
+         de
+         Barranquilla. Los clientes lo describen como delicioso y una
+         tradición en la
+         ciudad.</p>
 
-         <div class="derechos_reservados">
-            <p>&copy; 2024 Descubre Barranquilla. Todos los derechos
-               reservados.</p>
-         </div>
-      </footer>
+      <ul>
+         <li>
+            <p>Entrada y espacio accesible para personas en silla de
+               ruedas</p>
+         </li>
+         <li>
+            <p>Es un sitio ideal para ir con niños</p>
+         </li>
+         <li>
+            <p>Estacionamiento gratuito</p>
+         </li>
+      </ul>
+   </div>
 
-      <script src="Js/servicios.js"></script>
+   <h2 id="Acerca">Otras Sedes</h2>
+   <div class="Acerca_De">
 
-   </body>
+      <ul>
+         <li>
+            <p>Cl. 76 #62-00, Nte. Centro Historico, Barranquilla,
+               Atlántico</p>
+         </li>
+         <li>
+            <p>Cl. 99 #53 - 40, Riomar, Barranquilla, Atlántico</p>
+         </li>
+
+      </ul>
+   </div>
+
+   <h2 id="Como_llegar">Como llegar</h2>
+   <div class="Como_llegar">
+      <iframe
+         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62664.55937422925!2d-74.90146763868921!3d10.998431400942982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42d0db2eab6e7%3A0xd4345840d5c8d80c!2sHelader%C3%ADa%20Americana!5e0!3m2!1ses-419!2sco!4v1730666311886!5m2!1ses-419!2sco"
+         width="600" height="450" style="border: 0;;" allowfullscreen loading="lazy"
+         referrerpolicy="no-referrer-when-downgrade" id="Como_llegar"></iframe>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62662.645808818976!2d-74.87169647832032!3d11.007430100000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42d99129be07f%3A0x13bb465994e21a79!2sHelader%C3%ADa%20Americana!5e0!3m2!1ses-419!2sco!4v1732139376571!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62662.645808818976!2d-74.87169647832032!3d11.007430100000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42db2d114fb03%3A0x9b12e02aac1986d4!2sHelader%C3%ADa%20Americana!5e0!3m2!1ses-419!2sco!4v1732139422127!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </div>
+
+   <h2 id="Horario">Horarios</h2>
+   <div class="horas">
+      <div class="Lunes">
+         <h4 class="dia">Lunes</h4>
+         <h4 class="hora">9:00 a.m - 10:00 p.m</h4>
+      </div>
+
+      <div class="Lunes">
+         <h4 class="dia">Martes</h4>
+         <h4 class="hora">9:00 a.m - 10:00 p.m</h4>
+      </div>
+
+      <div class="Lunes">
+         <h4 class="dia">Miércoles</h4>
+         <h4 class="hora">9:00 a.m - 10:00 p.m</h4>
+      </div>
+
+      <div class="Lunes">
+         <h4 class="dia">Jueves</h4>
+         <h4 class="hora">9:00 a.m - 10:00 p.m</h4>
+      </div>
+
+      <div class="Lunes">
+         <h4 class="dia">Viernes</h4>
+         <h4 class="hora">9:00 a.m - 10:00 p.m</h4>
+      </div>
+
+      <div class="Lunes">
+         <h4 class="dia">Sábado</h4>
+         <h4 class="hora">9:00 a.m - 10:00 p.m</h4>
+      </div>
+
+      <div class="Lunes">
+         <h4 class="dia">Domingo</h4>
+         <h4 class="hora">9:00 a.m - 10:00 p.m</h4>
+      </div>
+   </div>
+
+   <footer class="pie_pagina">
+      <div class="info_contacto">
+         <h4>Contacto</h4>
+         <p>Email: nicolsalazar2531@gmail.com</p>
+         <p>Teléfono: (+57) 321 814 01 84</p>
+      </div>
+
+      <div class="redes_sociales">
+         <h4>Siguenos</h4>
+         <a href=" https://www.instagram.com/nicolsalazar__/" target="_blank">Instagram</a>
+         <a href=" https://github.com/NicolleAndrea2531" target="_blank">GitHub</a>
+      </div>
+
+      <div class="derechos_reservados">
+         <p>&copy; 2024 Descubre Barranquilla. Todos los derechos
+            reservados.</p>
+      </div>
+   </footer>
+
+   <script src="Js/servicios.js"></script>
+
+</body>
 
 </html>
