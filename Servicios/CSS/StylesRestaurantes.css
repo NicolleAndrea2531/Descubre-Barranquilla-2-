@@ -1,34 +1,36 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.restaurantes{
-           display: flex;
-                    justify-content: space-around;
-                    gap: 1.5rem;
-                    margin-left: 4rem;
-                    margin-right: 4rem;
-                    margin-block: 1.5rem;
-                    transition: 200ms;
-                    color: black;
-                    height: 400px;
-                    width: 400px;
-                    padding: 10px;
-                    background: #d8e7e3;
-                    box-sizing: border-box;
-                    box-shadow: 0 15px 25px rgba(0,0,0,.6);
-                    border-radius: 10px;
-                    margin-left: 20px;
-                    transition: 400ms;
-                    width: 420px;
-                    border-radius: 20px;
-                    overflow-x: hidden; /* contenido que se extienda se oculta */
-                    background-size: cover; /* Ajusta el tamaño completo */
-                    background-repeat: no-repeat; 
-                
-                    
+.restaurantes {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-block: 1.5rem;
+    transition: 200ms;
+    color: black;
+    height: 400px;
+    width: 400px;
+    padding: 10px;
+    background: #d8e7e3;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+    margin-left: 20px;
+    transition: 400ms;
+    width: 420px;
+    border-radius: 20px;
+    overflow-x: hidden;
+    /* contenido que se extienda se oculta */
+    background-size: cover;
+    /* Ajusta el tamaño completo */
+    background-repeat: no-repeat;
+
+
 }
 
 * {
@@ -59,17 +61,25 @@ box-sizing: border-box;
 }
 
 /* Diseño responsive */
-@media (max-width: 768px) { /* Tablet y dispositivos más pequeños */
+@media (max-width: 768px) {
+
+    /* Tablet y dispositivos más pequeños */
     .restaurantes {
-        margin: 1rem auto; /* Centra el contenedor */
-        width: 90%; /* Reduce el ancho a un porcentaje */
-        height: auto; /* Ajusta la altura según el contenido */
+        margin: 1rem auto;
+        /* Centra el contenedor */
+        width: 90%;
+        /* Reduce el ancho a un porcentaje */
+        height: auto;
+        /* Ajusta la altura según el contenido */
     }
 }
 
-@media (max-width: 576px) { /* Teléfonos */
+@media (max-width: 576px) {
+
+    /* Teléfonos */
     .restaurantes {
         margin: 0.5rem auto;
-        width: 100%; /* Ocupa todo el ancho disponible */
+        width: 100%;
+        /* Ocupa todo el ancho disponible */
     }
 }
