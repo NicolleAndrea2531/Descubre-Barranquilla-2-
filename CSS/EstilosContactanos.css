@@ -99,7 +99,7 @@ a {
 }
 
 .menu a:hover {
-          background-color: white;
+          background-color: rgb(112, 174, 255);
           color: black;
 }
 
