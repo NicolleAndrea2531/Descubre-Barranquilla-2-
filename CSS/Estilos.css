@@ -9,7 +9,7 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
-    font-size: 10px;
+    font-size: 15px;
     background-image: none;
     background-size: cover;
     background-repeat: no-repeat;
@@ -93,26 +93,31 @@ header .btn:hover {
 #menu {
     text-align: center;
     align-items: end;
+    
 
 }
 
 .menu {
-    margin-top: -50px;
-    display: block;
-    padding: 100px 150px;
+    margin-top: 10px;
+    justify-content: space-between;
+    padding: 100px 180px;
+    
+    
 
 }
 
 .menu a {
     text-decoration: none;
     color: black;
-    padding: 0px 10px;
-    font-size: 20px;
+    font-size: 18px;
+    gap: 20px;
+   
 }
 
 .menu a:hover {
-    background-color: white;
+    background-color: rgb(96, 170, 255);
     color: black;
+    border-radius: 8%;
 }
 
 .Inicio img {
@@ -120,17 +125,7 @@ header .btn:hover {
     height: 50%;
 }
 
-.Inicio .Entretenimiento-en-la-ciudad {
-    text-align: center;
-    align-items: center;
-    width: 50rem;
-    font-size: 10%;
-    margin-left: 15%;
-    margin-right: 15%;
-    font-size: 20px;
-    justify-content: space-around;
-    gap: 2rem;
-}
+
 
 
 
