@@ -106,6 +106,10 @@ header .btn:hover {
     color: rgb(12, 12, 12);
     padding: 0px 10px;
     font-size: 18px;
+     /* contenido que se extienda se oculta */
+     background-size: cover;
+     /* Ajusta el tamaño completo */
+     background-repeat: no-repeat;
 }
 
 .menu a:hover {
@@ -144,7 +148,6 @@ header .btn:hover {
     border-radius: 10px;
     margin-left: 20px;
     transition: 400ms;
-    width: 420px;
     border-radius: 20px;
     overflow-x: hidden;
     /* contenido que se extienda se oculta */
