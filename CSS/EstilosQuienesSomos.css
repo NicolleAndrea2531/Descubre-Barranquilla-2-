@@ -129,6 +129,7 @@ body {
           width: 100%;
 }
 
+/*Medidas para las fotos, segun el tamaño*/
 @keyframes slide {
           0% {
                     margin-left: 0;
@@ -229,7 +230,7 @@ body {
 }
 
 
-
+/*Dispositivos mas pequeños*/
 @media screen and (max-width: 768px) {
           body {
                     font-size: 14px;

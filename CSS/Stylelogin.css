@@ -50,14 +50,12 @@ body {
   width: 120px;
   height: 45px;
   background: rgb(96, 170, 255);
-  ;
   font-size: 15px;
   color: #fff;
   border: 0 solid;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
   outline: 1px solid;
   outline-color: rgb(96, 170, 255);
-  ;
   outline-offset: 0px;
   text-shadow: none;
   transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
@@ -81,7 +79,7 @@ a {
   color: black;
 }
 
-
+/* Para pantallas mas pequeñas*/
 @media screen and (max-width: 768px) {
   .login_formulario {
     width: 85%;
