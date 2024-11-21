@@ -1,7 +1,9 @@
+
+// Ayuda a que la pagina y/o funcion no se reinicie 
 document.getElementById("loginForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
-  // Obtiene los valores del correo y la contraseña desde los elementos del register
+  // Obtiene los valores del correo y la contraseña de los elementos ingresados previamente
   const email = document.getElementById("correo").value;
   const password = document.getElementById("Contraseña").value;
   // Obtiene el usuario almacenado en localStorage del correo ingresado
